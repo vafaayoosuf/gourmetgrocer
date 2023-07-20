@@ -1,0 +1,33 @@
+.img-products {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom-paragraph {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+      }
+      
+.heading-bg {
+    background-color: rgba(248, 249, 247, 0.815);
+}
+
+.text-bg{
+    background-color: rgba(255, 255, 255, 0.508);
+}
+
+.p-bold{
+    font-weight: bold;
+    background-color: rgba(55, 54, 54, 0.184);
+}
+
+.p-style {
+    font-style: Garamond, serif;
+    font-weight: 400;
+    color: aliceblue;
+    background-color: rgba(99, 99, 91, 0.207);
+}
