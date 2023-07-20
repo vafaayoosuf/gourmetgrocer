@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Products</title>
+  <style>
+    .product {
+      display: inline-block;
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #e8e5e5;
+    }
+    body {
+      background-image: url('productsbg.jpg') ;
+    }
+    .product img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    
+    .product h4 {
+      margin: 0;
+    }
+    
+    .product .price {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #d7d3d3;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px;
+    }
+    nav ul li a:hover {
+      background-color: #999;
+      color: #fff;
+    }
+    section {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .add-to-cart {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #7fd682;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .cart {
+      margin-top: 20px;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    .cart h2 {
+      margin: 0;
+    }
+    
+    .cart p {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<nav>
+  <ul>
+    <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/gg.html">Home</a></li>
+    <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/products.html">Products</a></li>
+    <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/About.html">About Us</a></li>
+    <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/contacts.html">Contact</a></li>
+    <li><a href="file:///C:/xampp/htdocs/MyFolder/loginform.html#">Login</a></li>
+  </ul>
+</nav>
+
+<body>
+  <h1>Products</h1>
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\ChocolateCookies.jpg" alt="Product 1">
+    <h4>Chocolate Cookies</h4>
+    <p class="price">Aed10</p>
+    <button class="add-to-cart" onclick="addToCart('Product 1', 9.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\nescafe.jpg" alt="Product 2">
+    <h4>Nescafe Latte</h4>
+    <p class="price">Aed14</p>
+    <button class="add-to-cart" onclick="addToCart('Product 2', 14.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Cupcakes.jpg" alt="Product 3">
+    <h4>Cupcake</h4>
+    <p class="price">Aed10</p>
+    <button class="add-to-cart" onclick="addToCart('Product 3', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Croissants.jpg" alt="Product 4">
+    <h4>Croissants</h4>
+    <p class="price">Aed12</p>
+    <button class="add-to-cart" onclick="addToCart('Product 4', 9.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Bun.webp" alt="Product 5">
+    <h4>Buns</h4>
+    <p class="price">Aed7</p>
+    <button class="add-to-cart" onclick="addToCart('Product 5', 14.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\bread.jpg" alt="Product 6">
+    <h4>Bread</h4>
+    <p class="price">Aed11</p>
+    <button class="add-to-cart" onclick="addToCart('Product 6', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\RedBull.jpeg" alt="Product 7">
+    <h4>Red Bull Energy drink</h4>
+    <p class="price">Aed11</p>
+    <button class="add-to-cart" onclick="addToCart('Product 7', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Monster.jpg" alt="Product 8">
+    <h4>Monster drink</h4>
+    <p class="price">Aed8</p>
+    <button class="add-to-cart" onclick="addToCart('Product 8', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\apples.jpg" alt="Product 9">
+    <h4>Apples</h4>
+    <p class="price">Aed6</p>
+    <button class="add-to-cart" onclick="addToCart('Product 9', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\banana.jpg" alt="Product 10">
+    <h4>Banana</h4>
+    <p class="price">Aed7</p>
+    <button class="add-to-cart" onclick="addToCart('Product 10', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Orange.jpg" alt="Product 11">
+    <h4>Orange</h4>
+    <p class="price">Aed8</p>
+    <button class="add-to-cart" onclick="addToCart('Product 11', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\CinnamonRoll.jpg" alt="Product 12">
+    <h4>Cinnamon Roll</h4>
+    <p class="price">Aed12</p>
+    <button class="add-to-cart" onclick="addToCart('Product 12', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\corn.jpg" alt="Product 13">
+    <h4>Corn</h4>
+    <p class="price">Aed9</p>
+    <button class="add-to-cart" onclick="addToCart('Product 13', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Onion.jpg" alt="Product 14">
+    <h4>Onion</h4>
+    <p class="price">Aed4</p>
+    <button class="add-to-cart" onclick="addToCart('Product 14', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Garlic.jpg" alt="Product 15">
+    <h4>Garlic</h4>
+    <p class="price">Aed5</p>
+    <button class="add-to-cart" onclick="addToCart('Product 15', 19.99)">Add to Cart</button>
+  </div>
+
+  <div class="cart" id="cart">
+    <h2>Cart</h2>
+    <ul id="cartList"></ul>
+  </div>
+
+  <script>
+    function addToCart(productName, price) {
+      var cartElement = document.getElementById('cart');
+      var itemElement = document.createElement('p');
+      itemElement.textContent = "Added: " + productName + " - Price: $" + price.toFixed(2);
+      cartElement.appendChild(itemElement);
+    }
+
+  </script>
+</body>
+
+</html>
