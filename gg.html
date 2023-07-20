@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet"
+  href= "styles.css">
+  <title>Supermarket Website</title>
+  <style>
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background-image: url('ggb.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: rgba(253, 253, 253, 0.577);
+    }
+    header {
+      background-color: #b6ecbbbf;
+      color: #fbf8f8;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    #logo {
+      width: 150px;
+      margin-left: 20px;
+      order: 0;
+    }
+    h1 {
+      font-family: Garamond, serif;
+      font-weight: bold;
+      font-size: 50px;
+      margin: 0 auto;
+      order: 1;
+    }
+    h2 {
+  font-size: 40px;
+  font-family: 'Brush Script MT', cursive;
+    }
+    .custom-heading {
+            text-align: center;
+        }
+
+    nav {
+      background-color: #d7d3d3;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px;
+    }
+    nav ul li a:hover {
+      background-color: #999;
+      color: #fff;
+    }
+    section {
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: white;
+    }
+    .product-list {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 300px;
+    }
+    .product {
+      width: 200px;
+      height: 200px;
+      background-color: #f1f1f1;
+      margin-right: 10px;
+    }
+    footer {
+      background-color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <form class="search-form">
+    <input type="search" id="search-box"placeholder= "Search Field">
+    <label for="search-box"class="fa fa-search"></label>
+  </form>
+  
+  <header>
+    <h1>Welcome to Gourmet Grocer</h1>
+    <img id="logo" src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\gourmetgrocer.png" alt="Logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/gg.html">Home</a></li>
+      <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/products.html">Products</a></li>
+      <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/About.html">About Us</a></li>
+      <li><a href="file:///C:/Users/vafay/OneDrive/Desktop/GourmetGrocer/contacts.html">Contact</a></li>
+      <li><a href="http://localhost/MyFolder/login.php">Login</a></li>
+    </ul>
+  </nav>
+  <p class="custom-paragraph">Gourmet Grocer is your go-to source for all of your grocery needs. Our store is stocked with an extensive selection of fresh produce and quality ingredients, sourced from local and international suppliers. Our commitment to providing you with the highest quality products is what sets us apart.</p>
+  <p>    </p>
+  <p class="custom-paragraph">We also offer a variety of convenience services to make your shopping experience easy and enjoyable. From home delivery to online ordering, Gourmet Grocer has you covered. Stop by and see why we’re the best supermarket in town.</p>
+  <div class="content">
+    <h2 class="custom-heading"><span class="heading-bg">New Arrivals</span></h2>
+    <div class="product-list">
+      <div class="product">
+        <img class="img-products" src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\CinnamonRoll.jpg" alt="Product 1">
+        <h3><span class="text-bg">Cinnamon Roll</span></h3>
+        <p class="p-style">Made with the finest ingredients and a secret family recipe, our cinnamon rolls are the epitome of perfection</p>
+        <p class="p-bold">Price: Aed12</p>
+      </div>
+      <div class="product">
+        <img class="img-products" src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\ChocolateCookies.jpg" alt="Product 2">
+        <h3><span class="text-bg">Chocolate Cookies</span></h3>
+        <p class="p-style">Our cookies are perfectly baked to achieve a delicate balance of crispy edges and a soft, chewy center</p>
+        <p class="p-bold">Price: Aed10</p>
+      </div>
+      <div class="product">
+        <img class="img-products" src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Croissants.jpg" alt="Product 3">
+        <h3><span class="text-bg">Croissants</span></h3>
+        <p class="p-style">Made with premium ingredients and baked to perfection for a light and airy texture.</p>
+        <p class="p-bold">Price: Aed12</p>
+      </div>
+      <div class="product">
+        <img class="img-products" src="C:\Users\vafay\OneDrive\Desktop\GourmetGrocer\img\Bun.webp" alt="Product 3">
+        <h3><span class="text-bg">Buns</span></h3>
+        <p class="p-style">Our skilled bakers use only the finest ingredients to ensure each bun is soft, fluffy, and full of flavor</p>
+        <p class="p-bold">Price: Aed7</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2021 Supermarket. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
